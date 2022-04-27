@@ -25,20 +25,38 @@
             color: green;
             font-family: Roboto mono, sans-serif;
         }
-     
+        
+        .sectitulo {
+            background-color: black;
+            background-image: 
+        radial-gradient(at 47% 33%, rgba(47, 97, 20, 0.195) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, rgba(22, 29, 17, 0.445) 0, transparent 55%);
+        }
+
         .titulo {
             /* background-color: aliceblue; */
-            margin: 0% 20% 0% 20%;
+            /* background-color: lime; */
+            margin: 0% 20% 0% 42%;
+            padding: 2rem ;
+            display: inline-block ;
             color: green;
             text-align: center;
-            box-shadow: rgba(0, 100, 0, 0.45) 0px 25px 20px -20px;
+            box-shadow: rgba(0, 100, 0, 0.45) 0px 25px 20px -5px;
             text-shadow: 0 0 10px darkgreen, 0 0 20px darkgreen, 0 0 40px darkgreen, 0 0 80px darkgreen;
+            /* glassmorphism */
+            backdrop-filter: blur(0px) saturate(120%);
+            -webkit-backdrop-filter: blur(0px) saturate(120%);
+            background-color: rgba(58, 58, 58, 0.3);
+            border-radius: 12px;
+            border: 1px solid rgba(39, 71, 46, 0.1);
+            
             }
 
         .titulo:hover {
             /* transform: scale(1.1); */
             animation: flicker steps(100) 3000ms 1s infinite; 
-            animation-timing-function: linear; 
+            animation-timing-function: linear;
+            animation-fill-mode: backwards; 
             /* will-change: contents; */
         }
         
@@ -71,34 +89,30 @@
                 transform: scale(1.1);
             }
             60% {
-                color: rgba(0, 255, 0, 0.6);
+                color: rgba(0, 255, 0, 0.5);
                 filter: saturate(200%) hue-rotate(20deg);
-                box-shadow: rgba(0, 100, 0, 0.5) 0px 25px 23px -22px;
-                transform: scale(1.12);
+                box-shadow: rgba(0, 100, 0, 0.5) 0px 25px 20px -20px;
+                transform: scale(1.1);
             }
             70% {
-                color: rgba(0, 255, 0, 0.7);
+                color: rgba(0, 255, 0, 0.4);
                 filter: saturate(200%) hue-rotate(20deg);
-                box-shadow: rgba(0, 100, 0, 0.6) 0px 28px 26px -24px;
-                transform: scale(1.14);
+                transform: scale(1.08);
             }
             80% {
-                color: rgba(0, 255, 0, 0.8);
+                color: rgba(0, 255, 0, 0.3);
                 filter: saturate(200%) hue-rotate(20deg);
-                box-shadow: rgba(0, 100, 0, .7) 0px 31px 29px -26px;
-                transform: scale(1.16);
+                transform: scale(1.06);
             }
             90% {
-                color: rgba(0, 255, 0, 0.9);
+                color: rgba(0, 255, 0, 0.2);
                 filter: saturate(200%) hue-rotate(20deg);
-                box-shadow: rgba(0, 100, 0, .8) 0px 34px 32px -28px;
-                transform: scale(1.18);
+                transform: scale(1.04);
             }
             100%{
-                color: rgba(0, 255, 0, 1);
+                color: rgba(0, 255, 0, 0.1);
                 filter: saturate(200%) hue-rotate(20deg);
-                box-shadow: rgba(0, 100, 0, .8) 0px 37px 35px -30px;
-                transform: scale(1.2);
+                transform: scale(1.02);
             }
         }
 
@@ -148,12 +162,13 @@
     <br>
     <br>
     <main>
-        <h1 class="titulo" id="top">
-            Victor Lagorio
-            <br>
-            Developer
-        </h1>
-        
+        <section class="sectitulo">
+            <h1 class="titulo" id="top">
+                Victor Lagorio
+                <br>
+                Developer
+            </h1>  
+        </section>
         <br>
         
         <h2 class="habilidades">habilidades</h2>

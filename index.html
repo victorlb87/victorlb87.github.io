@@ -4,50 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SallyPhotoApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" type="text/css">
+    <title>Victor Lagorio</title>
     <style>
+        nav {
+            position: fixed;
+        }
+        
+        a {
+            color: green;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: white;
+        }
+        
         body {
             background-color: black;
-            color:white;
-            font-family: sans-serif;
+            color: green;
+            font-family: Roboto mono, sans-serif;
         }
-        .imagensally {
-            width: 80%;
-            border-radius: 10%;
-            margin: 5px 10% 5px 10%;
-        }
-
+     
         .titulo {
             /* background-color: aliceblue; */
+            margin: 0% 20% 0% 20%;
             color: green;
-            margin: 1%;
             text-align: center;
+            box-shadow: rgba(0, 100, 0, 0.45) 0px 25px 20px -20px;
+            text-shadow: 0 0 10px darkgreen, 0 0 20px darkgreen, 0 0 40px darkgreen, 0 0 80px darkgreen;
+            }
 
+        .titulo:hover {
+            /* transform: scale(1.1); */
+            animation: flicker steps(100) 3000ms 1s infinite; 
+            animation-timing-function: linear; 
+            /* will-change: contents; */
         }
+        
+        @keyframes flicker {
+            10% {
+                color: rgba(0, 255, 0, 0.1);
+                filter: saturate(200%) hue-rotate(20deg);
+                transform: scale(1.02);
+            }
+            20% {
+                color: rgba(0, 255, 0, 0.2);
+                filter: saturate(200%) hue-rotate(20deg);
+                transform: scale(1.04);
+            }
+            30% {
+                color: rgba(0, 255, 0, 0.3);
+                filter: saturate(200%) hue-rotate(20deg);
+                transform: scale(1.06);
+            }
+            40% {
+                color: rgba(0, 255, 0, 0.4);
+                filter: saturate(200%) hue-rotate(20deg);
+                transform: scale(1.08);
+            }
+            
+            50% {
+                color: rgba(0, 255, 0, 0.5);
+                filter: saturate(200%) hue-rotate(20deg);
+                box-shadow: rgba(0, 100, 0, 0.5) 0px 25px 20px -20px;
+                transform: scale(1.1);
+            }
+            60% {
+                color: rgba(0, 255, 0, 0.6);
+                filter: saturate(200%) hue-rotate(20deg);
+                box-shadow: rgba(0, 100, 0, 0.5) 0px 25px 23px -22px;
+                transform: scale(1.12);
+            }
+            70% {
+                color: rgba(0, 255, 0, 0.7);
+                filter: saturate(200%) hue-rotate(20deg);
+                box-shadow: rgba(0, 100, 0, 0.6) 0px 28px 26px -24px;
+                transform: scale(1.14);
+            }
+            80% {
+                color: rgba(0, 255, 0, 0.8);
+                filter: saturate(200%) hue-rotate(20deg);
+                box-shadow: rgba(0, 100, 0, .7) 0px 31px 29px -26px;
+                transform: scale(1.16);
+            }
+            90% {
+                color: rgba(0, 255, 0, 0.9);
+                filter: saturate(200%) hue-rotate(20deg);
+                box-shadow: rgba(0, 100, 0, .8) 0px 34px 32px -28px;
+                transform: scale(1.18);
+            }
+            100%{
+                color: rgba(0, 255, 0, 1);
+                filter: saturate(200%) hue-rotate(20deg);
+                box-shadow: rgba(0, 100, 0, .8) 0px 37px 35px -30px;
+                transform: scale(1.2);
+            }
+        }
+
+        .habilidades {
+            margin: auto;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        table {
+            border-width: 2px;
+            border-style:solid;
+            border-color: green;
+            align-content: center;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        tr,th{
+            border: 1px solid green;
+            padding: 2px 8px 0;
+        }
+
+        .fuente {
+            text-transform: uppercase;
+            margin: auto;
+            text-align: center;
+        }
+
+        ol , li {
+            margin: auto;
+            list-style:  square inside ;
+            text-align: center;
+        }
+
     </style>
+
 </head>
 <body>
     <!-- Una photo app guiandome del curso de Freecodecamp -->
+    <nav>
+        <a href="index.html">>Home/</a>
+        <a href="sallyphotoapp.html">SallyPhotoApp/</a> 
+        
+    </nav>
+    <br>
+    <br>
     <main>
-        <h1 class="titulo" id="top">Hello Sally</h1>
-        <h2 class="titulo">SallyPhotoApp</h2>
-        <img class="imagensally" src="imagenes/Sally_1.jpg" alt="Foto de Sally">
-        <p>Te quiero Sally.</p>
-        <form action="none">
-            <input type="text" name="Mensaje a Sally" id="" placeholder="Mensaje a Sally">
+        <h1 class="titulo" id="top">
+            Victor Lagorio
             <br>
-            <p>Quien quiere mas a Sally:</p>
-            <label for="victor"><input type="radio" id="victor" name="QuiereaSally" checked>Victor</label>
-            <label for="victor2"><input type="radio" id="victor2" name="QuiereaSally">Victor</label>
-            <br>
-            <p>Quien quiere mas a Victor:</p>
-            <label for="Sally"><input type="checkbox" id="Sally" checked>Sally</label>
-            <label for="LaOtra"><input type="checkbox" id="LaOtra" checked>La Otra</label>
-            <br>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
-        <a href="#top">Vuelve al inicio</a>
+            Developer
+        </h1>
+        
+        <br>
+        
+        <h2 class="habilidades">habilidades</h2>
+        <table> 
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th>Conocimientos</th>
+                    <th>Basico</th>
+                    <th>Intermedio</th>
+                    <th>Avanzado</th>
+                    <th>Master</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>GIT</th>
+                    <th>x</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <th>x</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <th>x</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="fuente">Fuentes de aprendizaje</h2>
+        <ul>
+            <li>Libro Pro GIT</li>
+            <li>Freecodecamp.org</li>
+        </ul>
+    
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </main>
+    <a href="#top" >Vuelve al inicio</a>
 </body>
 </html>

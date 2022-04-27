@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SallyPhotoApp</title>
+    <style>
+         nav {
+            position: fixed;
+        }
+        
+        a {
+            color: green;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: white;
+        }
+                
+        body {
+            background-color: black;
+            color:white;
+            font-family: sans-serif;
+        }
+        .imagensally {
+            width: 80%;
+            border-radius: 10%;
+            margin: 5px 10% 5px 10%;
+        }
+
+        .titulo {
+            /* background-color: aliceblue; */
+            color: green;
+            margin: 1%;
+            text-align: center;
+            transform: skewX(-5deg);
+            transform: skewY(-5deg);
+        }
+
+        .heart {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: pink;
+            height: 50px;
+            width: 50px;
+            transform: rotate(-45deg) ;
+            animation-name: beat;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        .heart::after {
+            background-color: pink;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0px;
+            left: 25px;
+        }
+
+        .heart::before {
+            content: "";
+            background-color: pink;
+            border-radius: 50%;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: -25px;
+            left: 0px;
+        }
+       
+        @keyframes beat {
+            0% {
+            transform: scale(1) rotate(-45deg);
+            }
+            50% {
+            transform: scale(0.6) rotate(-45deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Una photo app guiandome del curso de Freecodecamp -->
+    <nav>
+        <a href="index.hmtl">Home</a>
+        <a href="sallyphotoapp.hmtl">SallyPhotoApp</a> 
+        <hr>
+    </nav>
+    <main>
+        <h1 class="titulo" id="top">Hello Sally</h1>
+        <h2 class="titulo">SallyPhotoApp</h2>
+        <div class="heart"></div>
+        <img class="imagensally" src="imagenes/Sally_1.jpg" alt="Foto de Sally">
+        <p>Te quiero Sally.</p>
+        <form action="none">
+            <input type="text" name="Mensaje a Sally" id="" placeholder="Mensaje a Sally">
+            <br>
+            <p>Quien quiere mas a Sally:</p>
+            <label for="victor"><input type="radio" id="victor" name="QuiereaSally" checked>Victor</label>
+            <label for="victor2"><input type="radio" id="victor2" name="QuiereaSally">Victor</label>
+            <br>
+            <p>Quien quiere mas a Victor:</p>
+            <label for="Sally"><input type="checkbox" id="Sally" checked>Sally</label>
+            <label for="LaOtra"><input type="checkbox" id="LaOtra" checked>La Otra</label>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <a href="#top">Vuelve al inicio</a>
+    </main>
+</body>
+</html>

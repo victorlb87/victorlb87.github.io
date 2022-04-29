@@ -1,5 +1,6 @@
 :root {
     --color-corazon: pink;
+    
 }
 
 nav {
@@ -25,7 +26,8 @@ h1, h2 {
 body {
     background-color: black;
     color: green;
-    font-family: Roboto mono, sans-serif;
+    font-family: 'Courier New', Roboto mono, sans-serif;
+    margin: 0 0 0 0;
 }
 
 main {
@@ -38,16 +40,20 @@ p {
 /* ------index------ */
 
 .sectitulo {
-    background-color: black;
+    /* background-color: black;
     background-image: 
 radial-gradient(at 47% 33%, rgba(47, 97, 20, 0.195) 0, transparent 59%), 
-radial-gradient(at 82% 65%, rgba(22, 29, 17, 0.445) 0, transparent 55%);
+radial-gradient(at 82% 65%, rgba(22, 29, 17, 0.445) 0, transparent 55%); */
+    
+    background-image: url(imagenes/malecon4000x3000.jpg);
+    background-size: 100% 50vw;
+    padding-bottom: 40vw;
+    background-repeat: no-repeat;
 }
 
 .titulo {
     margin: auto;
     padding: 2rem ;
-    
     text-shadow: 0 0 5px darkgreen, 0 0 10px darkgreen, 0 0 15px darkgreen, 0 0 20px darkgreen;
     
 }

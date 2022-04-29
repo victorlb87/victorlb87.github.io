@@ -6,161 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" type="text/css">
     <title>Victor Lagorio</title>
-    <style>
-        nav {
-            position: fixed;
-        }
-        
-        a {
-            color: green;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            color: white;
-        }
-        
-        body {
-            background-color: black;
-            color: green;
-            font-family: Roboto mono, sans-serif;
-        }
-        
-        .sectitulo {
-            background-color: black;
-            background-image: 
-        radial-gradient(at 47% 33%, rgba(47, 97, 20, 0.195) 0, transparent 59%), 
-        radial-gradient(at 82% 65%, rgba(22, 29, 17, 0.445) 0, transparent 55%);
-        }
-
-        .titulo {
-            /* background-color: aliceblue; */
-            /* background-color: lime; */
-            margin: 0% 20% 0% 42%;
-            padding: 2rem ;
-            display: inline-block ;
-            color: green;
-            text-align: center;
-            box-shadow: rgba(0, 100, 0, 0.45) 0px 25px 20px -5px;
-            text-shadow: 0 0 10px darkgreen, 0 0 20px darkgreen, 0 0 40px darkgreen, 0 0 80px darkgreen;
-            /* glassmorphism */
-            backdrop-filter: blur(0px) saturate(120%);
-            -webkit-backdrop-filter: blur(0px) saturate(120%);
-            background-color: rgba(58, 58, 58, 0.3);
-            border-radius: 12px;
-            border: 1px solid rgba(39, 71, 46, 0.1);
-            
-            }
-
-        .titulo:hover {
-            /* transform: scale(1.1); */
-            animation: flicker steps(100) 3000ms 1s infinite; 
-            animation-timing-function: linear;
-            animation-fill-mode: backwards; 
-            /* will-change: contents; */
-        }
-        
-        @keyframes flicker {
-            10% {
-                color: rgba(0, 255, 0, 0.1);
-                filter: saturate(200%) hue-rotate(20deg);
-                transform: scale(1.02);
-            }
-            20% {
-                color: rgba(0, 255, 0, 0.2);
-                filter: saturate(200%) hue-rotate(20deg);
-                transform: scale(1.04);
-            }
-            30% {
-                color: rgba(0, 255, 0, 0.3);
-                filter: saturate(200%) hue-rotate(20deg);
-                transform: scale(1.06);
-            }
-            40% {
-                color: rgba(0, 255, 0, 0.4);
-                filter: saturate(200%) hue-rotate(20deg);
-                transform: scale(1.08);
-            }
-            
-            50% {
-                color: rgba(0, 255, 0, 0.5);
-                filter: saturate(200%) hue-rotate(20deg);
-                box-shadow: rgba(0, 100, 0, 0.5) 0px 25px 20px -20px;
-                transform: scale(1.1);
-            }
-            60% {
-                color: rgba(0, 255, 0, 0.5);
-                filter: saturate(200%) hue-rotate(20deg);
-                box-shadow: rgba(0, 100, 0, 0.5) 0px 25px 20px -20px;
-                transform: scale(1.1);
-            }
-            70% {
-                color: rgba(0, 255, 0, 0.4);
-                filter: saturate(200%) hue-rotate(20deg);
-                transform: scale(1.08);
-            }
-            80% {
-                color: rgba(0, 255, 0, 0.3);
-                filter: saturate(200%) hue-rotate(20deg);
-                transform: scale(1.06);
-            }
-            90% {
-                color: rgba(0, 255, 0, 0.2);
-                filter: saturate(200%) hue-rotate(20deg);
-                transform: scale(1.04);
-            }
-            100%{
-                color: rgba(0, 255, 0, 0.1);
-                filter: saturate(200%) hue-rotate(20deg);
-                transform: scale(1.02);
-            }
-        }
-
-        .habilidades {
-            margin: auto;
-            margin-bottom: 10px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        table {
-            border-width: 2px;
-            border-style:solid;
-            border-color: green;
-            align-content: center;
-            margin: auto;
-            margin-bottom: 20px;
-        }
-
-        tr,th{
-            border: 1px solid green;
-            padding: 2px 8px 0;
-        }
-
-        .fuente {
-            text-transform: uppercase;
-            margin: auto;
-            text-align: center;
-        }
-
-        ol , li {
-            margin: auto;
-            list-style:  square inside ;
-            text-align: center;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Una photo app guiandome del curso de Freecodecamp -->
-    <nav>
-        <a href="index.html">>Home/</a>
-        <a href="sallyphotoapp.html">SallyPhotoApp/</a> 
-        
-    </nav>
-    <br>
-    <br>
+    <!-- Pagina personal de proyectos-->
+    <header>
+        <nav>
+            <a href="index.html">Home/</a>
+            <a href="sallyphotoapp.html"> SallyPhotoApp/</a> 
+        </nav>
+        <br>        
+    </header>
     <main>
         <section class="sectitulo">
             <h1 class="titulo" id="top">
@@ -169,7 +26,7 @@
                 Developer
             </h1>  
         </section>
-        <br>
+        
         
         <h2 class="habilidades">habilidades</h2>
         <table> 

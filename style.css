@@ -1,20 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 :root {
     --color-corazon: pink;
     
 }
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+    /* background-color: aliceblue; */
+}
 
 nav {
     position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav_links {
+    padding: 0px 0px 0px 0px;
+    font-size: x-large;
+    text-decoration: none;
+    list-style: none;
+    /* background-color: aliceblue; */
     box-shadow: rgba(0, 100, 0, 0.45) 0px 0px 3px 3px;
     border: 1px solid rgba(39, 71, 46, 0.1);
+    z-index: 1;
 }
 
-a {
+.nav_links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+}
+
+.nav_links li a {
     color: green;
-    text-decoration: none;
+    /* padding: 0 20px; */
+    transition: all 0.3s ease 0s;
 }
 
-a:hover {
+.nav_links li a:hover {
     color: white;
 }
 
@@ -26,12 +59,8 @@ h1, h2 {
 body {
     background-color: black;
     color: green;
-    font-family: 'Courier New', Roboto mono, sans-serif;
+    font-family: 'Courier New', 'Roboto Mono', monospace;
     margin: 0 0 0 0;
-}
-
-main {
-    /* background-color: blue; */
 }
 
 p {
